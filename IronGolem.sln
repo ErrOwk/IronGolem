@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronGolem", "IronGolem\IronGolem.csproj", "{ECC6473C-1986-1D33-45E2-5018F2B284B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronGolem.Desktop", "IronGolem.Desktop\IronGolem.Desktop.csproj", "{BFC024C9-A10A-F950-A634-28E3FF4CB031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECC6473C-1986-1D33-45E2-5018F2B284B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC6473C-1986-1D33-45E2-5018F2B284B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC6473C-1986-1D33-45E2-5018F2B284B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC6473C-1986-1D33-45E2-5018F2B284B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC024C9-A10A-F950-A634-28E3FF4CB031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC024C9-A10A-F950-A634-28E3FF4CB031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC024C9-A10A-F950-A634-28E3FF4CB031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC024C9-A10A-F950-A634-28E3FF4CB031}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6172892-EE3A-4D10-B8A9-36560EE0387D}
+	EndGlobalSection
+EndGlobal

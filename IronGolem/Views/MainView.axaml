@@ -1,0 +1,103 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:IronGolem.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="500"
+             x:Class="IronGolem.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <vm:MainViewModel />
+  </Design.DataContext>
+	<UserControl.Styles>
+		<!--神秘的关键帧动画-->
+		<Style Selector="Image.RightHand">
+			<Style.Animations>
+				<Animation  Duration="0:0:0.5" PlaybackDirection="Alternate" IterationCount="INFINITE">
+					<KeyFrame Cue="0%">
+						<Setter Property="Margin" Value="0,0,178,0"/>
+					</KeyFrame>
+					<KeyFrame Cue="100%">
+						<Setter Property="Margin" Value="0,0,89,44"/>
+					</KeyFrame>
+				</Animation>
+			</Style.Animations>
+		</Style>
+		<Style Selector="Image.LeftHand">
+			<Style.Animations>
+				<Animation Duration="0:0:0.5"  PlaybackDirection="Alternate" IterationCount="INFINITE">
+					<KeyFrame Cue="0%">
+						<Setter Property="Margin" Value="0,89,0,0"/>
+					</KeyFrame>
+					<KeyFrame Cue="100%">
+						<Setter Property="Margin" Value="87,43,0,0"/>
+					</KeyFrame>
+				</Animation>
+			</Style.Animations>
+		</Style>
+		<Style Selector="Image.Body">
+			<Style.Animations>
+				<Animation Duration="0:0:0.5"  PlaybackDirection="Alternate" IterationCount="INFINITE">
+					<KeyFrame Cue="0%">
+						<Setter Property="Margin" Value="0,0,0,0"/>
+					</KeyFrame>
+					<KeyFrame Cue="100%">
+						<Setter Property="Margin" Value="0,45,89,0"/>
+					</KeyFrame>
+				</Animation>
+			</Style.Animations>
+		</Style>
+		<Style Selector="Image.Feet">
+			<Style.Animations>
+				<Animation Duration="0:0:0.5"  PlaybackDirection="Alternate" IterationCount="INFINITE">
+					<KeyFrame Cue="0%">
+						<Setter Property="Margin" Value="0,109,0,0"/>
+					</KeyFrame>
+					<KeyFrame Cue="100%">
+						<Setter Property="Margin" Value="0,153,89,0"/>
+					</KeyFrame>
+				</Animation>
+			</Style.Animations>
+		</Style>
+	</UserControl.Styles>
+	<RelativePanel>
+		<Image Source="/Assets/IronBlock.png"
+			   Classes="RightHand"
+               RelativePanel.AlignHorizontalCenterWithPanel="True"
+               RelativePanel.AlignVerticalCenterWithPanel="True"
+			   Margin="0,0,178,0"
+               Width="100" Height="100" />
+		<!-- RightHand's original margin: 0,0,89,44 -->
+		<!-- RightHand's margin: 0,0,178,0 -->
+		<Image Source="/Assets/IronBlock.png"
+			   Classes="Feet"
+               RelativePanel.AlignHorizontalCenterWithPanel="True"
+               RelativePanel.AlignVerticalCenterWithPanel="True"
+			   Margin="0,109,0,0" 
+               Width="100" Height="100" />
+		<!-- Feet's original margin: 0,109,0,0 -->
+		<!-- Feet's margin: 0,153,89,0 -->
+		<Image Source="/Assets/IronBlock.png"
+			   Classes="Body"
+               RelativePanel.AlignHorizontalCenterWithPanel="True"
+               RelativePanel.AlignVerticalCenterWithPanel="True"
+			   Margin="0,0,0,0"
+               Width="100" Height="100" />
+		<!-- Body's original margin: 0,0,0,0 -->
+		<!-- Body's margin: 0,45,89,0 -->
+		<Image Source="/Assets/IronBlock.png"
+			   Classes="LeftHand"
+               RelativePanel.AlignHorizontalCenterWithPanel="True"
+               RelativePanel.AlignVerticalCenterWithPanel="True"
+			   Margin="0,89,0,0"
+               Width="100" Height="100" />
+		<!-- LeftHand's original margin: 87,43,0,0 -->
+		<!-- LeftHand's margin: 0,89,0,0 -->
+		<Image Source="/Assets/Pumpkin.png"
+               RelativePanel.AlignHorizontalCenterWithPanel="True"
+               RelativePanel.AlignVerticalCenterWithPanel="True"
+			   Margin="0,0,0,110"
+               Width="100" Height="100" />
+	</RelativePanel>
+	<!--不是哥们你真看我代码啊?-->
+</UserControl>
