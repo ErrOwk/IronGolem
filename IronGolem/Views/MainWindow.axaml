@@ -6,7 +6,12 @@
         xmlns:views="clr-namespace:IronGolem.Views"
         mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
         x:Class="IronGolem.Views.MainWindow"
+		Background="Transparent"
+		SystemDecorations="None"
+		Topmost="True"
         Icon="/Assets/Pumpkin.png"
-        Title="IronGolem">
+        Title="IronGolem"
+		Width="280"
+		Height="280">
         <views:MainView />
 </Window>
